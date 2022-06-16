@@ -1,0 +1,10 @@
+Cloud Services (Service Layer) – Handles crucial Data management functionalities
+		Auth and Access control
+		Infra manager
+		Query Optimizer, Query planning, Query Compilation
+		Metadata manager (metadata Storage)
+		Security
+Query Processing (Compute Layer)
+	VWH Layer
+Database Storage (Storage Layer/Data Layer)
+	Centralized storage (Hybrid columnar)	

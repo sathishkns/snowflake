@@ -1,0 +1,76 @@
+# snowflake session 1 (06/06) - https://jamboard.google.com/d/1h3j7g10LDNqzNVpfOcQ4n03rnnAzxDkDxL9Bhm1LKQk/edit?usp=meet_whiteboard
+
+https://signup.snowflake.com
+
+# snowflake session 2 (07/06) - https://jamboard.google.com/d/1-uJ0m67DFEKxJzUR00B6XFuadNACq2uuymbfzvNCutQ/edit?usp=meet_whiteboard
+	-cloud data platform
+	-ELT 
+	-ELT tools - fivetran,stitch
+	-snowflake will not have connector/drivers to pull data
+	-we should have custom code like py application, jdbc driver, csv data to push data to snow flake
+	
+
+# snowflake session 2 (08/06)
+	-basically snowflake is a service(running on top of cloud platform), and we have many clients like webUI, CLI, python, Dbeaver
+	-CLI is called snowSQL (installed in local machine)
+	-those commands from client will get executed in VPC
+	
+	- how many hours and how much stored is pricing storage cost
+	- Micropartition
+	- warehouse object
+	- Data Sharing
+	
+# session 3 - took from mobile
+	- https://jamboard.google.com/d/1SiD31OpETdYhvxWyfKcGOMHeonWQTb6agfgXJoQxq68/edit?usp=meet_whiteboard
+	-privileges - what level of operation perform
+
+# sesson 4 -
+	Account is top level object (my account)
+		useradmin (default role)
+		sysadmin (default role)
+		securityadmin (default role)
+		
+		# users and roles		
+		
+		sales roles (user defined role)
+			sales user
+		HR role (user defined role)
+			HR user
+		finance role (user defined role)
+			finance user
+			
+			all three reporting to SYSADMIN
+			
+		create seperate warehouse
+			sales warehouse
+			HR warehouse
+			finance warehouse
+			
+		create database
+			sales schema
+			HR schema
+			finance schema
+
+Snowflake Advantages:
+
+	Snowpipe
+	Secure Data Sharing
+	Time Travel
+	Low maintenance from infrastructure side
+	Easy administration
+	Incredibly flexible for an RDBMS
+	Dynamic Data Masking
+	Zero Copy Clone for Sandbox Env Creation.
+	Undrop for accidents and Swap for data swapping
+	no duplicate load from external stage if we run load (copy command) multiple times (it does signature check)
+	profiling features in the Snowsight UI
+	Auto suspend of compute at 5 min of inactivity (vs Databricks at 10).
+	Faster start time of cluster/compute. You can go from 0 to millions of rows in a few secs, while Databricks you would have to wait to boot up.
+	Cloning
+	Ability to use either INTERNAL or EXTERNAL stage
+	Data sharing
+	Extremely simplified data replication for DR
+	Time Travel, which makes backup jobs redundant
+	3x HA, generally unusual for data warehouses
+	Connection URL for PROD & DR, which means you don’t have to change a thing in the app for DR switch
+	Snowpark
