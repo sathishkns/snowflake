@@ -8,3 +8,11 @@ Query Processing (Compute Layer)
 	VWH Layer
 Database Storage (Storage Layer/Data Layer)
 	Centralized storage (Hybrid columnar)	
+	
+Which of the following workloads is Snowflake suited for?
+	Data Engineering
+	Data Lakes
+	DWH
+	Data Science
+	Data Application
+	Data Sharing and Exchanges
