@@ -16,3 +16,5 @@ Which of the following workloads is Snowflake suited for?
 	Data Science
 	Data Application
 	Data Sharing and Exchanges
+
+https://github.com/snowflakedb/snowpark-python
